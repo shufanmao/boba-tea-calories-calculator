@@ -5,16 +5,17 @@ import plotly.express as px
 # Load datasets
 def load_data():
     files = {
-        "Coco": "/workspaces/boba-tea-calories-calculator/data/csv/coco_drinks_calories.csv",
-        "Kungfu": "/workspaces/boba-tea-calories-calculator/data/csv/kungfu.csv",
-        "Chatime": "/workspaces/boba-tea-calories-calculator/data/csv/chatime_drinks_calories.csv",
-        "Sharetea": "/workspaces/boba-tea-calories-calculator/data/csv/share tea.csv",
-        "Boba Time": "/workspaces/boba-tea-calories-calculator/data/csv/boba time.csv",
-        "Gongcha": "/workspaces/boba-tea-calories-calculator/data/csv/gongcha.csv"
+        "Coco": "data/csv/coco_drinks_calories.csv",
+        "Kungfu": "data/csv/kungfu.csv",
+        "Chatime": "data/csv/chatime_drinks_calories.csv",
+        "Sharetea": "data/csv/share tea.csv",
+        "Boba Time": "data/csv/boba time.csv",
+        "Gongcha": "data/csv/gongcha.csv"
     }
     data = {name: pd.read_csv(path) for name, path in files.items()}
     return data
 
+data = load_data()
 # Streamlit sidebar options
 brand = st.sidebar.selectbox('Select the brand:', list(data.keys()))
 chart_type = st.sidebar.selectbox('Select chart type:', ['Bar Chart', 'Pie Chart', 'Histogram'])

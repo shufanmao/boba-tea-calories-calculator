@@ -136,61 +136,64 @@ def calculate_equivalent_drink_to_food(drink_calories, food_calories):
     if food_calories > 0:  # Avoid division by zero
         return drink_calories / food_calories
     return 0
+def safe_int_convert(value):
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return 0
+
+
 
 def main():
-    st.title('Boba Tea and Nutrition Information Center')
-
-    # Section for Boba Tea Drinks Calorie Calculator
     st.header('Boba Tea Drinks Calorie Calculator')
+
+    # Load data
     drinks_data = load_data('data/csv/coco_output.csv')
+
+    # Get unique drink options
     drink_options = drinks_data['Drink Name'].unique()
+
+    # User selects a drink
     selected_drink = st.selectbox("Choose your drink:", drink_options)
-    cup_size_options = ['Small Size', 'Medium Size', 'Big Size']
+
+    # Get details for the selected drink
+    drink_details = drinks_data[drinks_data['Drink Name'] == selected_drink].iloc[0]
+
+    drink_calories_SMALL = safe_int_convert(drink_details["Small Size Drink Calories"])
+    drink_calories_MEDIUM = safe_int_convert(drink_details["Medium Size Drink Calories"])
+    drink_calories_BIG = safe_int_convert(drink_details["Big Size Drink Calories"])
+
+    # List available cup sizes based on calorie data
+    cup_size_options = []
+    if drink_calories_SMALL != 0:
+        cup_size_options.append('Small Size')
+    if drink_calories_MEDIUM != 0:
+        cup_size_options.append('Medium Size')
+    if drink_calories_BIG != 0:
+        cup_size_options.append('Big Size')
+
+    # User selects a cup size
     cup_size = st.radio("Choose your cup size:", cup_size_options)
 
-    drink_calories = 0
-    if selected_drink:
-        drink_details = drinks_data[drinks_data['Drink Name'] == selected_drink].iloc[0]
-        size_calorie_map = {
-            'Small Size': 'Small Size Drink Calories',
-            'Medium Size': 'Medium Size Drink Calories',
-            'Big Size': 'Big Size Drink Calories'
-    }
-        if cup_size in size_calorie_map:
-            calorie_column = size_calorie_map[cup_size]
-            if calorie_column in drink_details:
-                drink_calories = drink_details[calorie_column]
+    if selected_drink and cup_size_options:
+        if cup_size not in cup_size_options:
+            st.write("This size is not available for the selected drink.")
+        else:
+            # Map cup size to calories
+            calories = {
+                'Small Size': drink_calories_SMALL,
+                'Medium Size': drink_calories_MEDIUM,
+                'Big Size': drink_calories_BIG
+            }
+            selected_calories = calories[cup_size]
+            st.markdown(f"Calories for {selected_drink} ({cup_size}): **<span style='color:red'>{selected_calories} kcal</span>**", unsafe_allow_html=True)
 
-        if cup_size == 'Medium Size':
-            if 'Medium Size' in drink_details:
-                st.markdown(f"Calories for {selected_drink} ({cup_size}): **<span style='color:red'>{drink_calories} kcal</span>**", unsafe_allow_html=True)
-            else:
-                st.write("There is no such size available for this drink.")
-
-        elif cup_size == 'Small Size':
-            if 'Small Size' in drink_details:
-                st.write("There is no such size available for this drink.")
-            else:
-                st.markdown(f"Calories for {selected_drink} ({cup_size}): **<span style='color:red'>{drink_calories} kcal</span>**", unsafe_allow_html=True)
-
-        elif cup_size == 'Big Size':
-            if 'Big Size' in drink_details:
-                st.write("There is no such size available for this drink.")
-            else:
-                st.markdown(f"Calories for {selected_drink} ({cup_size}): **<span style='color:red'>{drink_calories} kcal</span>**", unsafe_allow_html=True)
-
+        # Display image if available
         image_path = drink_details['Path']
-        print(image_path)
         if os.path.exists(image_path):
             st.image(image_path, caption=selected_drink, use_column_width=True)
         else:
             st.write("No image available for this drink.")
-
-        # image_path = drink_details['Path']
-        # if os.path.exists(image_path):
-        #     st.image(image_path, caption=selected_drink, use_column_width=True)
-        # else:
-        #     st.write("No image available for this drink.")
 
    
     st.markdown("---")  # Adds a horizontal line for visual separation
