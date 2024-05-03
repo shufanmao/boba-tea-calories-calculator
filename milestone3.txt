@@ -1,0 +1,44 @@
+DSCI 510: Bubble Tea Calories Calculator
+Developed by: Shufan Mao
+
+Overview
+This web application is tailored for bubble tea enthusiasts who seek to make informed dietary choices by providing detailed nutritional information on various bubble tea drinks. Utilize this tool to navigate through different brands, customize drinks with your preferred toppings, and directly compare the caloric impacts of these choices with equivalent foods.
+
+Using This Application - Interactive Features:
+Brand and Drink Selection: Begin by selecting a bubble tea brand and a specific drink from our extensive database.
+Customization: Enhance your drink by choosing brands, sizes and toppings. Each addition updates the calorie count, providing a visual representation of the nutritional impact.
+Caloric Comparisons: Compare the calories in your customized drink with common foods, such as fruits or snacks, to better understand their nutritional values.
+Store Locator: Utilize the geolocation feature to find nearby bubble tea stores, complete with detailed information including opening hours and ratings displayed on an interactive map.
+
+How to Navigate:
+Main Menu: All features are accessible from the main menu.
+Drink Information: Once a drink is selected, detailed nutritional information is displayed, and customization options are provided.
+Results: Interactive charts and maps visualize the results based on your selections and inputs.
+
+Project Insights and Reflections
+Purpose: Initiated to demystify the nutritional content of bubble tea¡ªa popular choice with often underestimated caloric content¡ªthe tool aims not just to calculate caloric intake but also to educate users on healthier consumption patterns.
+Discoveries: The project confirmed my assumptions about caloric variations across different drinks and brands. For example, pure tea categories generally contain fewer calories. However, many milk tea drinks surpass the calorie content of typical Starbucks refreshers, with some reaching up to 700 kcal, about a third of the daily intake recommended for a 2000 calorie diet.
+FYI: Some websites are poorly developed because when I tried to scrape certain data, the structure is not consistent so the scrapper may not apply to all cases. Sometimes it might be due to a typo, and then the code may not work. For example, there was a case that ¡°matcha¡± was misspelled as ¡°match¡±, leading to wrong returned values. 
+https://chatime.com/drinks/match-latte-milk-tea/
+
+Challenges:
+Data Scraping: Inconsistencies in website development affected the data scraping efficiency. For instance, a typographical error like "match" instead of "matcha" led to incorrect or null data retrievals.
+Data Integration: Initial difficulties with integrating VS Code and GitHub Codespace presented technical hurdles that were eventually overcome.
+Data Management: While initially planned to use SQL for data management, the project's current scope was adequately managed with pandas. As more brands get integrated, transitioning to a more robust database may become necessary.
+
+Desired Skills:
+Advanced API Management: Improved skills in API management could enhance data retrieval and functionality.
+UI/UX Design: Skills in this area could greatly improve the aesthetic and user-friendly nature of the interface.
+Curiosity to Explore: Further exploration of Streamlit's capabilities could unlock additional functionalities.
+
+Future Enhancements:
+User Profiles: Introduce profiles to track and analyze personal consumption over time.
+Expanded Database: Include more brands and regional varieties, alongside enhanced data visualization tools.
+Health Recommendations: Incorporate generative AI to provide personalized health tips based on user's consumption patterns.
+Known Limitations and Issues
+Performance Issues: The map feature may respond slightly slower due to API constraints and the overhead of downloading images. Minor errors may occur, especially when API calls return no data.
+Feature Availability: Some functionalities, such as topping options, are not yet fully implemented.
+Usability: Efforts will be made to enhance the design and overall user experience in future updates.
+
+Conclusion
+The Bubble Tea Calories Calculator serves as a practical tool for those looking to better understand and manage their dietary intake through bubble tea consumption. It encourages thoughtful consideration of both taste and nutritional impact, fostering healthier lifestyle choices.
