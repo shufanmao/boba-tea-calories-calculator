@@ -2,8 +2,9 @@ altair
 numpy
 pandas
 pydeck
-streamlit
 folium
-csv
 matplotlib
 beautifulsoup4
+streamlit
+streamlit-folium
+plotly
