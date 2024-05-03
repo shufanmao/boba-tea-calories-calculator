@@ -1,0 +1,65 @@
+Category,Drink Name,Small Size Drink Calories,Medium Size Drink Calories,Big Size Drink Calories,Matching File,Path
+seasonal,Oreo Chocolate,525,,650,Oreo Chocolate.png,data/pic/coco/Oreo Chocolate.png
+seasonal,Oreo Caramel Chocolate,580,,733,Oreo Caramel Chocolate.png,data/pic/coco/Oreo Caramel Chocolate.png
+seasonal,Oreo Vanilla Chocolate,582,,694,Oreo Vanilla Chocolate.png,data/pic/coco/Oreo Vanilla Chocolate.png
+seasonal,Smashed Taro Milk,,460,,Smashed Taro Milk.png,data/pic/coco/Smashed Taro Milk.png
+seasonal,Smashed Taro Tapioca Milk,,460,,Smashe Taro Tapioca Milk.png,data/pic/coco/Smashe Taro Tapioca Milk.png
+seasonal,Smashed Taro QQ Milk,,460,,Smashe Taro Qq Milk.png,data/pic/coco/Smashe Taro Qq Milk.png
+seasonal,QQ Milk Tea,379,,647,QQ Milk Tea.png,data/pic/coco/QQ Milk Tea.png
+seasonal,QQ Black Tea Latte,270,,558,QQ Black Tea Latte.png,data/pic/coco/QQ Black Tea Latte.png
+seasonal,Thai Bubble Tea,595,,827,Thai Bubble Tea.png,data/pic/coco/Thai Bubble Tea.png
+seasonal,Thai Milk Tea,472,,503,Thai Tea.png,data/pic/coco/Thai Tea.png
+seasonal,Peach Green Tea,460,,640,Peach Green Tea.png,data/pic/coco/Peach Green Tea.png
+seasonal,Peach Kefir,460,,640,Peach Kefir.png,data/pic/coco/Peach Kefir.png
+seasonal,Peach Smoothie,460,,640,Peach Smoothie.png,data/pic/coco/Peach Smoothie.png
+seasonal,Berry Party,169,,278,Berry Party.png,data/pic/coco/Berry Party.png
+seasonal,Berry Sparkle,,387,,Berry Sparkle.png,data/pic/coco/Berry Sparkle.png
+seasonal,Berry Lovers,301,,461,Berry Lovers.png,data/pic/coco/Berry Lovers.png
+seasonal,Berry Smoothie,45,,537,Berry Smoothie.png,data/pic/coco/Berry Smoothie.png
+milk-tea,Signature Bubble Tea,414,,654,Signature Bubble Tea.png,data/pic/coco/Signature Bubble Tea.png
+milk-tea,Classic Milk Tea,249,,517,Classic Milk Tea.png,data/pic/coco/Classic Milk Tea.png
+milk-tea,Taro Milk Tea,305,,512,Taro Milk Tea.png,data/pic/coco/Taro Milk Tea.png
+milk-tea,Jasmine Milk Tea,270,,535,Jasmine Milk Tea.png,data/pic/coco/Jasmine Milk Tea.png
+milk-tea,Lava Pearl Milk Tea,,472,,Lava Pearl Milk Tea.png,data/pic/coco/Lava Pearl Milk Tea.png
+milk-tea,Lava Pearl Jasmine Milk Tea,,546,,Lava Pearl Jasmine Milk Tea.png,data/pic/coco/Lava Pearl Jasmine Milk Tea.png
+milk-tea,Caramel Milk Tea,315,,605,Caramel Milk Tea.png,data/pic/coco/Caramel Milk Tea.png
+milk-tea,Vanilla Milk Tea,315,,575,Vanilla Milk Tea.png,data/pic/coco/Vanilla Milk Tea.png
+fruit-tea,Mango Green Tea,70,,377,Mango Green Tea.png,data/pic/coco/Mango Green Tea.png
+fruit-tea,Bubble Gaga,95,,596,Bubble Gaga.png,data/pic/coco/Bubble Gaga.png
+fruit-tea,Passionfruit Black Tea,61,,426,Passionfruit Black Tea.png,data/pic/coco/Passionfruit Black Tea.png
+fruit-tea,Passionfruit Green Tea,61,,426,Passionfruit Green Tea.png,data/pic/coco/Passionfruit Green Tea.png
+fruit-tea,Lemon Green Tea,45,,377,Lemon Green Tea.png,data/pic/coco/Lemon Green Tea.png
+fruit-tea,Lemon Black Tea,45,,537,Lemon Black Tea.png,data/pic/coco/Lemon Black Tea.png
+fruit-tea,Honey Aloe Vera,221,,258,Honey Aloe Vera.png,data/pic/coco/Honey Aloe Vera.png
+fruit-tea,Lemon Aloe Vera,230,,267,Lemon Aloe Vera.png,data/pic/coco/Lemon Aloe Vera.png
+fruit-tea,Grapefruit Green Tea,88,,318,Grapefruit Green Tea.png,data/pic/coco/Grapefruit Green Tea.png
+fruit-tea,Lemon Dunk,60,,565,Lemon Dunk.png,data/pic/coco/Lemon Dunk.png
+fruit-tea,Lemon Winter Melon Tea,236,,346,Lemon Wintermelon.png,data/pic/coco/Lemon Wintermelon.png
+yakult,Mango Yakult,175,,378,Mango Yakult.png,data/pic/coco/Mango Yakult.png
+yakult,Grapefruit Yakult,116,,467,Grapefruit Yakult.png,data/pic/coco/Grapefruit Yakult.png
+yakult,Lemon Yakult,106,,521,Lemon Yakult.png,data/pic/coco/Lemon Yakult.png
+yakult,Green Tea Yakult,141,,406,Green Tea Yakult.png,data/pic/coco/Green Tea Yakult.png
+slush-smoothie,Mango Slush,245,,574,Mango Slush.png,data/pic/coco/Mango Slush.png
+slush-smoothie,Taro Slush,256,,613,Toro Slush.png,data/pic/coco/Toro Slush.png
+slush-smoothie,Passionfruit Mango Slush,106,,547,Passionfruit Mango Slush.png,data/pic/coco/Passionfruit Mango Slush.png
+slush-smoothie,Matcha Smoothie,391,,437,Matcha Smoothie.png,data/pic/coco/Matcha Smoothie.png
+slush-smoothie,Mango Smoothie,190,,523,Mango Smoothie.png,data/pic/coco/Mango Smoothie.png
+tea-latte,Black Tea Latte,140,,378,Black Tea Latte.png,data/pic/coco/Black Tea Latte.png
+tea-latte,Okinawa Black Sugar Latte,268,,459,Okinawa Black Sugar Latte.png,data/pic/coco/Okinawa Black Sugar Latte.png
+tea-latte,Matcha Latte,180,,391,Matcha Latte.png,data/pic/coco/Matcha Latte.png
+tea-latte,Lava Pearl Latte,,396,,Lava Pearl Latte.png,data/pic/coco/Lava Pearl Latte.png
+tea-latte,Lava Pearl Matcha Latte,,472,,Lava Pearl Matcha Latte.png,data/pic/coco/Lava Pearl Matcha Latte.png
+tea-latte,Red Bean Matcha Latte,298,,607,Matcha Latte With Red Bean.png,data/pic/coco/Matcha Latte With Red Bean.png
+cloud,Cloud Black Tea,135,,441,Cloud Black Tea.png,data/pic/coco/Cloud Black Tea.png
+cloud,Cloud Green Tea,135,,441,Cloud Green Tea.png,data/pic/coco/Cloud Green Tea.png
+fresh-tea,Green Tea,19,,211,Green Tea.png,data/pic/coco/Green Tea.png
+fresh-tea,Black Tea,19,,262,Black Tea.png,data/pic/coco/Black Tea.png
+fresh-tea,Winter Melon Tea,151,,227,Wintermelon Tea.png,data/pic/coco/Wintermelon Tea.png
+tapioca-milk,Tapioca Milk,434,,634,Tapioca Milk.png,data/pic/coco/Tapioca Milk.png
+tapioca-milk,Red Bean Tapioca Milk,434,,634,Tapioca Milk Red Bean.png,data/pic/coco/Tapioca Milk Red Bean.png
+tapioca-milk,Grass Jelly Tapioca Milk,434,,634,Tapioca Milk Grass Jelly.png,data/pic/coco/Tapioca Milk Grass Jelly.png
+seasonal,Hoji Milk Tea,368,502,,Hoji Milk Tea.png,data/pic/coco/Hoji Milk Tea.png
+seasonal,Hoji Cha,104,154,,Hoji Cha.png,data/pic/coco/Hoji Cha.png
+seasonal,Peach Honey Jello,460,640,,Peach Honey Jello.png,data/pic/coco/Peach Honey Jello.png
+milk tea,2 Ladies Milk Tea,254,460,,2 Ladies Milk Tea.png,data/pic/coco/2 Ladies Milk Tea.png
+milk tea,3 Guys Milk Tea,309,545,,3 Guys Milk Tea.png,data/pic/coco/3 Guys Milk Tea.png

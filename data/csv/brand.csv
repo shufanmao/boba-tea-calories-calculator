@@ -1,0 +1,7 @@
+Brand,CSV Path,Pic
+Coco,data/csv/coco_drinks_calories.csv,/workspaces/boba-tea-calories-calculator/data/pic/coco
+Kungfu,data/csv/kungfu.csv,/workspaces/boba-tea-calories-calculator/data/pic/kungfu
+Chatime,data/csv/chatime_drinks_calories.csv,/workspaces/boba-tea-calories-calculator/data/pic/chatime
+Sharetea,data/csv/share tea.csv,
+Boba Time,data/csv/boba time.csv,
+Gongcha,data/csv/gongcha.csv,
