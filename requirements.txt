@@ -3,7 +3,6 @@ numpy
 pandas
 pydeck
 folium
-csv
 matplotlib
 beautifulsoup4
 streamlit
