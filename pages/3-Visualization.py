@@ -9,7 +9,7 @@ def load_brand_data():
     st.cache_data.clear() 
     try:
         # Correct path should be provided here
-        return pd.read_csv("/Users/shufanmao/Documents/GitHub/boba-tea-calories-calculator/data/csv/brand.csv")
+        return pd.read_csv("data/csv/brand.csv")
     except FileNotFoundError:
         st.error("Brand data file not found. Please check the file path.")
         st.stop()  # Halt execution
