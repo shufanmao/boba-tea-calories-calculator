@@ -27,7 +27,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
 }
 # Prepare to write to a CSV file
-csv_file_path = '/workspaces/boba-tea-calories-calculator/data/csv/coco_drinks_calories.csv'
+csv_file_path = 'data/csv/coco_drinks_calories.csv'
 with open(csv_file_path, 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Category', 'Drink Name', 'Small Size Drink Calories', 'Medium Size Drink Calories', 'Big Size Drink Calories'])

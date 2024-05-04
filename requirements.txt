@@ -8,3 +8,4 @@ beautifulsoup4
 streamlit
 streamlit-folium
 plotly
+PyPDF2

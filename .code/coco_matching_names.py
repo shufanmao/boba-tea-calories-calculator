@@ -4,10 +4,10 @@ from fuzzywuzzy import process
 import numpy as np
 
 # Path to coco_drinks_calories.csv file
-csv_file_path = '/workspaces/boba-tea-calories-calculator/data/csv/coco_drinks_calories.csv'
+csv_file_path = 'data/csv/coco_drinks_calories.csv'
 
 # Path to the folder containing images
-image_folder_path = '/workspaces/boba-tea-calories-calculator/data/pic/coco'
+image_folder_path = 'data/pic/coco'
 
 # Read the CSV file into a DataFrame
 df = pd.read_csv(csv_file_path)
@@ -61,7 +61,7 @@ df['Path'] = df['Matching File'].apply(lambda x: os.path.join(image_folder_path,
 
 
 # Save the DataFrame to a new CSV file with the header
-df.to_csv('/workspaces/boba-tea-calories-calculator/data/csv/coco_output.csv', index=False)
+df.to_csv('data/csv/coco.csv', index=False)
 
 
 # Upon checking based on print results, finish manual edits
@@ -79,7 +79,7 @@ df.loc[56, 'Matching File'] = 'Tapioca Milk.png'
 df['Path'] = df['Matching File'].apply(lambda x: os.path.join(image_folder_path, x) if pd.notnull(x) else np.nan)
 
 # Save the DataFrame to a new CSV file with the header
-df.to_csv('/workspaces/boba-tea-calories-calculator/data/csv/coco_output.csv', index=False)
+df.to_csv('data/csv/coco.csv', index=False)
 
 ## Create a set of all image files to double check if they are all included
 all_image_files = set(image_files)

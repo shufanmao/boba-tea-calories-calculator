@@ -1,4 +1,4 @@
-﻿Category,Drink,Kcal,Saturated Fat / g,Sodium / mg,Carbs / g,Sugar/g,Vegetarian Foods,Allergen,Caffeine (mg)/ cup
+Category,Drink Name,Calories,Saturated Fat / g,Sodium / mg,Carbs / g,Sugar/g,Vegetarian Foods,Allergen,Caffeine (mg)/ cup
 Milk Tea,Classic Milk Tea (Black Tea),469,16.7,104,73,46,Lacto Vegetarian,Milk,95
 Milk Tea,Classic Milk Tea (Green Tea),453,16.7,101,69,45,Lacto Vegetarian,Milk,90
 Milk Tea,Classic Milk Tea (Oolong Tea),453,16.7,101,69,45,Lacto Vegetarian,Milk,145
@@ -72,16 +72,3 @@ Creama,Creama Tea (Oolong Tea),370,12,351,56,43,Lacto Vegetarian,Milk,145
 Creama,Mango Creama,528,12,375,111,74,Lacto Vegetarian,"Milk, Mango",90
 Creama,Matcha Creama,489,21,404,61,35,Lacto Vegetarian,Milk,30
 Creama,Wintermelon Creama,475,12,356,82,67,Lacto Vegetarian,Milk,-
-,,,,,,,,,
-,Topping,Kcal,Saturated Fat / g,Sodium / mg,Carbs / g,Sugar / g,Vegetarian Foods,Allergen,
-Topping,Pearl,276,0,32,69,23.4,Vegan,-,
-Topping,Mini Pearl,276,0,32,69,23.4,Vegan,-,
-Topping,Pudding,102,1,6,23,19.3,Lacto Vegetarian,Milk,
-Topping,Herb Jelly,73,0,112,18,17,Vegan,-,
-Topping,Aiyu Jelly,111,0,2,27.4,27.3,Vegan,-,
-Topping,Lychee Jelly,236,0,112,59,50.4,Vegan,Tree Nuts,
-Topping,Aloe Vera,77,0,7,19,19,Vegan,-,
-Topping,Red Bean,154,0,12,34,16.8,Vegan,-,
-Topping,Crystal Boba,108,0,36,26,22,Vegan,-,
-Topping,Ice Cream,139,4.9,53,17,13.1,Lacto Vegetarian,Milk,
-Topping,Creama,253,13.2,385,20,9.5,Lacto Vegetarian,Milk,

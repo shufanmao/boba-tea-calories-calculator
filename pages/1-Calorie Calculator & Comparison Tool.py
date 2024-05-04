@@ -148,7 +148,7 @@ def main():
     st.header('Boba Tea Drinks Calorie Calculator')
 
     # Load data
-    drinks_data = load_data('data/csv/coco_output.csv')
+    drinks_data = load_data('data/csv/coco.csv')
 
     # Get unique drink options
     drink_options = drinks_data['Drink Name'].unique()
@@ -163,6 +163,9 @@ def main():
     drink_calories_MEDIUM = safe_int_convert(drink_details["Medium Size Drink Calories"])
     drink_calories_BIG = safe_int_convert(drink_details["Big Size Drink Calories"])
 
+    # Initialize drink_calories to zero
+    drink_calories = 0
+    
     # List available cup sizes based on calorie data
     cup_size_options = []
     if drink_calories_SMALL != 0:

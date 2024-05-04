@@ -16,9 +16,9 @@ Drink Information: Once a drink is selected, detailed nutritional information is
 Results: Interactive charts and maps visualize the results based on your selections and inputs.
 
 Project Insights and Reflections
-Purpose: Initiated to demystify the nutritional content of bubble tea¡ªa popular choice with often underestimated caloric content¡ªthe tool aims not just to calculate caloric intake but also to educate users on healthier consumption patterns.
+Initiated to demystify the nutritional content of bubble teaï¿½ï¿½a popular choice with often underestimated caloric contentï¿½ï¿½the tool aims not just to calculate caloric intake but also to educate users on healthier consumption patterns.
 Discoveries: The project confirmed my assumptions about caloric variations across different drinks and brands. For example, pure tea categories generally contain fewer calories. However, many milk tea drinks surpass the calorie content of typical Starbucks refreshers, with some reaching up to 700 kcal, about a third of the daily intake recommended for a 2000 calorie diet.
-FYI: Some websites are poorly developed because when I tried to scrape certain data, the structure is not consistent so the scrapper may not apply to all cases. Sometimes it might be due to a typo, and then the code may not work. For example, there was a case that ¡°matcha¡± was misspelled as ¡°match¡±, leading to wrong returned values. 
+FYI: Some websites are poorly developed because when I tried to scrape certain data, the structure is not consistent so the scrapper may not apply to all cases. Sometimes it might be due to a typo, and then the code may not work. For example, there was a case that ï¿½ï¿½matchaï¿½ï¿½ was misspelled as ï¿½ï¿½matchï¿½ï¿½, leading to wrong returned values. 
 https://chatime.com/drinks/match-latte-milk-tea/
 
 Challenges:
