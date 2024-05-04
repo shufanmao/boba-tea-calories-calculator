@@ -1,0 +1,28 @@
+Data Description:
+
+Brands:
+1. Gong Cha
+https://gongchausa.com/nutritional-information/
+2. Kung Fu Tea
+https://drive.google.com/file/d/1qNItD5P2mtz6Ong6Aa2S7KM_a3G-FbI-/view
+3. Sharetea
+https://www.1992sharetea.com/nutrition-facts
+4. Coco 
+https://cocobubbletea.com/menu
+5. Boba Time
+https://itsbobatime.com/
+6. Chatime
+https://chatime.com/
+
+Files:
+Separate by category and brands. All pretty straight forward naming system. Most are csv files or pictures. 
+
+- CSV files contain calories information: boba time.csv; chatime_drinks_calories.csv; coco_drinks_calories.csv; coco_output; gongcha.csv; kungfu.csv; share tea.csv
+- topping files: distracted from calories files.
+- Brands picture folders (so far): coco, Kungfu, chatime;
+- path finder csv: brand.csv
+
+Code:
+- Scrappers either is used to get text and pics;
+- matching names.py helps to match drinks with pictures
+- under pages folder, the .py files are used to build pages on web.
