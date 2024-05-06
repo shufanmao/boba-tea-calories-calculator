@@ -59,19 +59,13 @@ def display_calories_kungfu(drinks_data, selected_drink, selected_toppings, topp
 
     total_calories = base_calories
 
-    # Ensure topping selections come after drink size selection
+    # Calculate calories from selected toppings
     if selected_toppings:
         for topping in selected_toppings:
             if topping in toppings_data['Topping'].values:
-                # Assume sizes are in the data and allow user to select size
-                topping_sizes = toppings_data[toppings_data['Topping'] == topping]['Size'].unique()
-                if topping_sizes.size > 0:
-                    selected_topping_size = st.selectbox(f"Choose size for {topping}:", topping_sizes)
-                    topping_calories = toppings_data[(toppings_data['Topping'] == topping) & (toppings_data['Size'] == selected_topping_size)]['Calories'].iloc[0]
-                    total_calories += topping_calories
-                    st.markdown(f"Added <em>{topping}</em> will add <span style='color:red; font-weight:bold;'>{topping_calories}</span> kcal</span>", unsafe_allow_html=True)
-                else:
-                    st.write("No size data for selected topping.")
+                topping_calories = toppings_data[toppings_data['Topping'] == topping]['Calories'].iloc[0]
+                total_calories += topping_calories
+                st.markdown(f"Added <em>{topping}</em> will add <span style='color:red; font-weight:bold;'>{topping_calories}</span> kcal</span>", unsafe_allow_html=True)
             else:
                 st.write(f"Topping {topping} not found in the data.")
 
@@ -83,6 +77,7 @@ def display_calories_kungfu(drinks_data, selected_drink, selected_toppings, topp
         st.image(drinks_data.loc[drinks_data['Drink Name'] == selected_drink, 'Path'].iloc[0], caption=selected_drink)
 
     return total_calories
+
            
 def display_calories_sharetea(drinks_data, selected_drink, selected_toppings, toppings_data):
     """Function to display total calories for a Sharetea drink with optional toppings."""
@@ -150,12 +145,13 @@ def main():
         "chatime": "data/csv/chatime.csv",
         "kungfu": "data/csv/kungfu_simple.csv",
         "sharetea": "data/csv/sharetea.csv",
-        "boba_time": "data/csv/bobatime.csv"
+        "boba_time": "data/csv/bobatime.csv",
+        #"gongcha": "data/csv/gongcha.csv"  # Example, ensure this line matches your actual setup
     }
     toppings_files = {
         "topping_sharetea": "data/csv/topping_sharetea.csv",
-        "topping_kungfu": "data/csv/topping_kungfu.csv"
-        #"topping_gongcha": "data/csv/topping_gongcha.csv"
+        "topping_kungfu": "data/csv/topping_kungfu.csv",
+        # "topping_gongcha": "data/csv/topping_gongcha.csv"  # If available
     }
 
     # Let user choose a brand
@@ -167,6 +163,9 @@ def main():
     # User selects a drink
     selected_drink = st.selectbox("Choose your drink:", drinks_data['Drink Name'].unique())
     
+    selected_toppings = []  # Initialize the selected_toppings to an empty list
+    toppings_data = None
+
     if selected_brand in ['sharetea', 'kungfu']:
         toppings_file = toppings_files[f"topping_{selected_brand}"]
         toppings_data = load_data(toppings_file)
@@ -183,6 +182,7 @@ def main():
         filter_conditions = pd.Series([True] * len(drinks_data))
         drink_calories = display_calories_boba_time(drinks_data, filter_conditions, selected_drink)
     
+    # Continue with the rest of your function as previously defined
     st.markdown("---")  # Adds a horizontal line for visual separation
 
     # Section for Nutrition Information Finder
