@@ -1,0 +1,13 @@
+Topping,Calories,FatCals(kcal),Fat(g), SatFat (g),TransFat (g) ,Chol (mg) ,  Sod(Mg),Carb (g),TotFib (g) , Sugar (g)  ,Prot (g) ,Allergen Statement (English)
+Milk Foam,50,30,3.5,3,0,5,65,4,0,1,0,CONTAINS MILK.
+Pearl,35,0,0,0,0,0,5,8,0,2,0,
+Star Jelly,70,0,0,0,0,0,5,17,0,16,0,CONTAINS TREE NUTS.
+Mango Popping Pearl,30,0,0,0,0,0,5,8,0,7,0,
+White Pearl (Kantan Jelly),35,0,0,0,0,0,5,9,0,6,0,
+Coconut Jelly,40,0,0,0,0,0,0,11,0,10,0,CONTAINS TREE NUTS.
+Pudding,25,5,0,0,0,0,10,5,0,4,0,CONTAINS MILK.
+Herbal Jelly,10,0,0,0,0,0,25,3,0,3,0,
+Ai-Yu Jelly,10,0,0,0,0,0,0,2,0,2,0,
+Basil Seeds,0,0,0,0,0,0,0,0,0,0,0,
+Oreo Crumbs,60,20,2,0,0,0,70,8,0,5,1,"CONTAINS MILK, SOY, WHEAT."
+Vanilla Ice Cream,170,100,11,7,0,65,45,16,0,14,2,"CONTAINS EGG, MILK."

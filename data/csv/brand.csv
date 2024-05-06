@@ -1,7 +1,11 @@
 Brand,CSV Path,Pic Path,Column1,Column2,Column3,Column4,Column5,Column6,Column7,Column8,Column9,Column10,Column11,Column12,Column13,Column14,Column15,Column16,Column17,Column18
-coco,data/csv/coco.csv,data/pic/coco,Category,Drink Name,Small Size Drink Calories,Medium Size Drink Calories,Big Size Drink Calories,Matching File,Path,,,,,,,,,,,
-kungfu,data/csv/kungfu.csv,data/pic/kungfu,Drink Name,Size,Sugar Level,Calories from Fat,Total Fat,Saturated Fat,Trans Fat,Cholesterol (mg),Sodium(mg),Carbohydrates,Fiber,Sugar,Protein,Calcium %,Allergen Statement (English),,,
+coco,data/csv/coco.csv,data/pic/coco,Category,Drink Name,Small Size Calories,Medium Size Calories,Big Size Calories,Matching File,Path,,,,,,,,,,,
+kungfu_simple,data/csv/kungfu_simple.csv,,Drink Name,Small Size Calories,Medium Size Calories,Big Size Calories,,,,,,,,,,,,,,
+kungfu,data/csv/kungfu.csv,data/pic/kungfu,Drink Name,Size,Sugar,Calories,Total Fat,Saturated Fat,Trans Fat,Cholesterol (mg),Sodium(mg),Carbohydrates,Fiber,Sugar,Protein,Calcium %,Allergen Statement (English),,,
 chatime,data/csv/chatime.csv,data/pic/chatime,Drink Name,Small Size Calories,Medium Size Calories,Big Size Calories,,,,,,,,,,,,,,
 sharetea,data/csv/sharetea.csv,data/pic/sharetea,Category,Drink Name,Calories,Saturated Fat / g,Sodium / mg,Carbs / g,Sugar/g,Vegetarian Foods,Allergen,Caffeine (mg)/ cup,,,,,,,,
 boba time,data/csv/bobatime.csv,data/pic/bobatime,Category,Drink Name,Size,Calories,Vitamin C (mg),Total Fat (g),Cholesterol (mg),Sodium (mg),Carbohydra te (g),Fiber (g),Sugar (g),Protein (g),Vitamin D,Calcium,Iron,,,
 gongcha,data/csv/gongcha.csv,data/pic/gongcha,Category,Drink Name ,Size,Sugar,Cals (kcal),FatCals(kcal),Fat(g), SatFat (g),TransFat (g) ,Chol (mg) ,  Sod(Mg),Carb (g),TotFib (g) , Sugar (g)  ,Prot (g) ,Allergen,,
+topping_gongcha,data/csv/topping_gongcha.csv,,Topping,Calories,FatCals(kcal),Fat(g),SatFat (g),TransFat (g),Chol (mg),Sod(Mg),Carb (g),TotFib (g),Sugar (g),Prot (g),Allergen Statement (English),,,,,
+topping_kungfu,data/csv/topping_kungfu.csv,,Topping,Size,Serving Size (g),Calories,Calories from Fat,Total Fat,Saturated Fat,Trans Fat,Cholesterol(mg),Sodium(mg),Carbohydrates,Fiber,Sugar,Protein,Calcium %,,,
+topping_sharetea,data/csv/topping_sharetea.csv,,Topping,Calories,Saturated Fat / g,Sodium / mg,Carbs / g,Sugar / g,Vegetarian Foods,Allergen,,,,,,,,,,

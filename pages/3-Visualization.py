@@ -1,13 +1,10 @@
 import streamlit as st
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define a function to load the brand configuration data with improved caching
 @st.cache_data
-
 def load_brand_data():
-    st.cache_data.clear() 
     try:
         # Correct path should be provided here
         return pd.read_csv("data/csv/brand.csv")
